@@ -1,0 +1,21 @@
+@keyframes brandSlide {
+  0% {
+    transform: translateX(0);
+  }
+
+  40% {
+    transform: translateX(0);
+  }
+
+  60% {
+    transform: translateX(-35%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-brandSlide {
+  animation: brandSlide 18s ease-in-out infinite;
+}
