@@ -3,7 +3,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
 const StoreContext = createContext();
-export const API_URL = "http://localhost:5000";
+export const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 export const StoreProvider = ({ children }) => {
   // ================= AUTH =================

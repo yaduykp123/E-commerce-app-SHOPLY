@@ -13,7 +13,7 @@ const [loading, setLoading] = useState(true);
  useEffect(() => {
   const fetchMobiles = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/products?limit=50");
+      const res = await axios.get("/products?limit=50");
 
             
                     setMobiles(res.data.products || []);

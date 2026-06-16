@@ -4,7 +4,7 @@ import { useStore } from '../CONTEXT/StoreContext';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api`;
 
 function Profile() {
   const { user, setUser } = useStore();
